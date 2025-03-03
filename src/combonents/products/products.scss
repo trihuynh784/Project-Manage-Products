@@ -1,0 +1,34 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    width: 22%;
+    margin-right: 3%;
+    margin-bottom: 20px;
+    &--image img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+    &--title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+    &--price-new {
+      color: red;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    &--price-old {
+      color: red;
+      text-decoration: line-through;
+      font-weight: bold;
+      font-size: 13px;
+    }
+    &--discount {
+      font-weight: bold;
+      font-size: 13px;
+    }
+  }
+}
